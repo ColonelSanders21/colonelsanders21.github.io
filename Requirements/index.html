@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>Project Overview - Natural Language Rules Docs</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Project Overview";
+    var mkdocs_page_input_path = "Requirements.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> Natural Language Rules Docs</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../Project Management/">Project Plan</a>
+	    </li>
+          
+            <li class="toctree-l1 current">
+		
+    <a class="current" href="./">Project Overview</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l2"><a href="#project-overview">Project Overview</a></li>
+    
+
+    <li class="toctree-l2"><a href="#project-glossary">Project Glossary</a></li>
+    
+
+    <li class="toctree-l2"><a href="#storyboarding">Storyboarding</a></li>
+    
+
+    <li class="toctree-l2"><a href="#user-stories">User Stories</a></li>
+    
+
+    <li class="toctree-l2"><a href="#technical-resources">Technical Resources</a></li>
+    
+
+    <li class="toctree-l2"><a href="#similar-products">Similar Products</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l3" href="#rita-dsl-live-demo">Rita-DSL (live demo)</a></li>
+        
+        </ul>
+    
+
+    <li class="toctree-l2"><a href="#open-source-products">Open-Source Products</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l3" href="#fret-formal-requirements-elicitation-tool">FRET: Formal Requirements Elicitation Tool</a></li>
+        
+            <li><a class="toctree-l3" href="#in2sql">In2sql</a></li>
+        
+        </ul>
+    
+
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../Software Design/">Architecture/Component Diagram</a>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">Natural Language Rules Docs</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Project Overview</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="project-overview">Project Overview</h1>
+<p>This project is intended to allow easier customization of rules and regulations to be evaluated against a Building Image Modelling (BIM) model, a task which as of now requires intimate familiarity with the syntax required for these rules to be evaluated by external programs. This web application allows a user to write a set of rules in plain English and translate these rules into a more specific rule language, one which can be exported to a file and easily imported into an evaluation program. It is intended to be used by any users working with BIM, regardless of their familiarity with the rule language or the ways in which this language is interpreted by external model evaluation programs. This project will serve as an intermediary layer between creating written requirements for a project and evaluation of these requirements in modelling software.</p>
+<hr />
+<h1 id="project-glossary">Project Glossary</h1>
+<ul>
+<li><strong>Building Information Modeling (BIM)</strong> - The digital process of creating and representing buildings and other construction elements using software such as Autodesk Revit. </li>
+<li><strong>Rule</strong> - An individual constraint or suggestion for a building, such as a building code or guideline.</li>
+<li><strong>Ruleset</strong> - A collection of rules, all of which should apply to a building under different circumstances.</li>
+<li><strong>Design Rule Language (DRL)</strong> - The representation of a rule in a more precise format easy to understand and apply to a BIM model. Developed by Christoph Sydora, see <a href="https://era.library.ualberta.ca/items/161fc740-e93b-4908-879e-ed71eb944bf5">his paper</a> on the subject.</li>
+<li><strong>Types</strong> - A component of a rule in Christoph's rule language. Types are the different kinds of objects which exist within a building. For example, walls, sinks, cabinets, and so on.</li>
+<li><strong>Units</strong> - A component of a rule in Christoph's rule language. Units are any measure, such as distance, weight, volume, and so on.</li>
+<li><strong>Relations</strong> - A component of a rule in Christoph's rule language. Relations are the connection between different types in the rule. For example, the keyword BETWEEN might be a relation limitation between two different types.</li>
+<li><strong>Properties</strong> - A component of a rule in Christoph's rule language. Properties are the inherent values of each member of a type. For example, a sink might be required to be of a certain length to pass the rule.</li>
+</ul>
+<hr />
+<h1 id="storyboarding">Storyboarding</h1>
+<p><img alt="Storyboard for Application" src="https://i.imgur.com/x6mFl0R.png" /></p>
+<hr />
+<h1 id="user-stories">User Stories</h1>
+<table>
+<thead>
+<tr>
+<th><strong>ID</strong></th>
+<th><strong>Name</strong></th>
+<th><strong>Priority</strong></th>
+<th><strong>Description</strong></th>
+<th><strong>Tests</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>US 1</td>
+<td>Input Natural Language</td>
+<td>Must Have</td>
+<td>As a user, I want to be able to type a rule in natural language, so that I can express my desired rule without needing to know any specific syntax.</td>
+<td><ol><li>Open the main page.</li><li>Create a new ruleset.</li><li>Write a new rule in plain english in the provided text input box. </li><li>Follow provided popup suggestions if writing is not fully recognized.</li><li>Click the analyze option.</li><li>Confirm that the rule generated is semantically the same as what you have written by cross-referencing the reverse translation provided.</li></ol></td>
+</tr>
+<tr>
+<td>US 2</td>
+<td>Key Word Highlighting</td>
+<td>Should Have</td>
+<td>As a user, I want key words (such as relations, types, units, and properties) to be highlighted and color coded as I type so that I can confirm that the text I output is being registered properly.</td>
+<td><ol><li>Open the main page.</li><li>Create a new ruleset.</li><li>Write a new rule in plain english in the provided text input box.</li><li>Confirm that:<ol><li>All units that have been written are highlighted in the correct colour</li><li>All relations that have been written are highlighted in the correct colour</li><li>All properties that have been written are highlighted in the correct colour</li><li>All types that have been written are highlighted in the correct colour</li></ol></li></ol></td>
+</tr>
+<tr>
+<td>US 3</td>
+<td>Unknown Word Highlighting</td>
+<td>Must Have</td>
+<td>As a user, I want to be made aware when I use words that are not understood by the system, so that I can avoid semantic errors in the output.</td>
+<td><ol><li>Open the main page.</li><li>Create a new ruleset.</li><li>Write a new rule in plain english in the provided text input box. Include a word that the system is not built to recognize, eg. “bagel”.</li><li>Confirm that the word has been highlighted red.</li><li>Delete the word, and confirm that the highlighting disappears with it.</li></ol></td>
+</tr>
+<tr>
+<td>US 4</td>
+<td>Unknown Word Suggestions</td>
+<td>Must Have</td>
+<td>As a user, I want to be provided suggestions for key words not understood by the system, so that I can easily correct my input.</td>
+<td><ol><li>Open the main page.</li><li>Create a new ruleset.</li><li>Write a new rule in plain english in the provided text input box. Include a word that the system is not built to recognize, eg. “bagel”.</li><li>Confirm that the word has been highlighted red, and that a popup with possible suggestions has appeared.<ol><li>Select a suggestion and confirm that the unrecognized word has been changed</li><li>Delete the word, and confirm that the highlighting and popup have disappeared.</li></ol></li></ol></td>
+</tr>
+<tr>
+<td>US 5</td>
+<td>Rule Conversion to DRL</td>
+<td>Must Have</td>
+<td>As a user, I want the rules that I write in English to be converted to DRL, so that I can use the newly formatted rules to evaluate a 3D model in an external program.</td>
+<td><ol><li>Open the main page.</li><li>Create a new ruleset.</li><li>Using the examples provided in the ‘Rules in Multiple Formats’ spreadsheet in the ‘401 Rule NLP’ Google Drive folder, input a rule in English into the text input box.</li><li>Use any suggestions provided in popups as necessary to ensure the system fully registers the rule.</li><li>Click the ‘Analyze’ button</li><li>Ensure that the rule output in the design language is correct with the entry in the spreadsheet corresponding to your English rule.</li></ol></td>
+</tr>
+<tr>
+<td>US 6</td>
+<td>JSON Export</td>
+<td>Must Have</td>
+<td>As a user, I want to export a ruleset of DRL formatted rules to JSON, so that I can save them and import them into my evaluation program.</td>
+<td><ol><li>Open the main page.</li><li>Create a new ruleset.</li><li>Using the examples provided in the ‘Rules in Multiple Formats’ spreadsheet in the ‘401 Rule NLP’ Google Drive folder, input a rule in English into the text input box.</li><li>Use any suggestions provided in popups as necessary to ensure the system fully registers the rule.</li><li>Click the ‘Analyze’ button</li><li>Ensure that the rule output in the design language is correct with the entry in the spreadsheet corresponding to your English rule.</li><li>Repeat steps 1-7 for a few additional rules.</li><li>Click the export button.</li><li>Ensure that a JSON file is downloaded, and that the JSON file matches the rule in the spreadsheet.</li></ol></td>
+</tr>
+<tr>
+<td>US 7</td>
+<td>DRL Conversion to English</td>
+<td>Would Have</td>
+<td>As a user, I want to see the generated DRL formatted rules translated back to English, so that I can verify that the intent of my rules have been properly expressed by the system.</td>
+<td><ol><li>Open the main page.</li><li>Create a new ruleset.</li><li>Using the examples provided in the ‘Rules in Multiple Formats’ spreadsheet in the ‘401 Rule NLP’ Google Drive folder, input a rule in English into the text input box.</li><li>Use any suggestions provided in popups as necessary to ensure the system fully registers the rule.</li><li>Click the ‘Analyze’ button</li><li>Ensure that the rule output in the design language is correct with the entry in the spreadsheet corresponding to your English rule.</li><li>Ensure that the English output that is re-translated below the design language version is semantically identical to the rule you wrote initially.</li></ol></td>
+</tr>
+<tr>
+<td>US 8.0</td>
+<td>Ruleset Creation</td>
+<td>Should Have</td>
+<td>As a user, I want to be able to create a new ruleset.</td>
+<td><ol><li>Open the main page.</li><li>Create a new ruleset.</li><li>Ensure that the ruleset was created.</li></ol></td>
+</tr>
+<tr>
+<td>US 8.1</td>
+<td>Ruleset Name Editing</td>
+<td>Should Have</td>
+<td>As a user, I want to be able to edit the name of my ruleset, so that I can adjust the title if necessary.</td>
+<td><ol><li>Open the main page. </li><li>Create a new ruleset.</li><li>Click on the name of the ruleset in the navigation bar.</li><li>Write a new name in the text box that appears.</li><li>Click outside of the box, and confirm that the name for the ruleset has been modified.</li></ol></td>
+</tr>
+<tr>
+<td>US 8.2</td>
+<td>Ruleset Rule Deletion</td>
+<td>Should Have</td>
+<td>As a user, I want to be able to remove a rule from my ruleset, so that I can remove it if it is not necessary.</td>
+<td><ol><li>Open the main page. </li><li>Create a new ruleset.</li><li>Using the examples provided in the ‘Rules in Multiple Formats’ spreadsheet in the ‘401 Rule NLP’ Google Drive folder, input a rule in English into the text input box.</li><li>Use any suggestions provided in popups as necessary to ensure the system fully registers the rule.</li><li>Click the ‘Analyze’ button</li><li>Ensure that the rule output in the design language is correct with the entry in the spreadsheet corresponding to your English rule.</li><li>On the navigation bar, click the X icon next to the selected rule.</li><li>Ensure the rule has been deleted.</li></ol></td>
+</tr>
+<tr>
+<td>US 8.3</td>
+<td>Ruleset Rule Addition</td>
+<td>Should Have</td>
+<td>As a user, I want to be able to add a new rule to my ruleset, so that I can expand upon the rules I have already.</td>
+<td><ol><li>Open the main page. </li><li>Create a new ruleset.</li><li>Using the examples provided in the ‘Rules in Multiple Formats’ spreadsheet in the ‘401 Rule NLP’ Google Drive folder, input a rule in English into the text input box.</li><li>Use any suggestions provided in popups as necessary to ensure the system fully registers the rule.</li><li>Click the ‘Analyze’ button</li><li>Ensure that the rule output in the design language is correct with the entry in the spreadsheet corresponding to your English rule.</li><li>On the navigation bar, click the + icon.</li><li>Ensure that a new rule has been added to the list.</li></ol></td>
+</tr>
+<tr>
+<td>US 9</td>
+<td>Web service</td>
+<td>Must Have</td>
+<td>As a user/administrator, I want to be able to access the tool through a web browser, so that I can use it easily from anywhere.</td>
+<td><ol><li>Open the main page on a variety of internet connected devices.</li></ol></td>
+</tr>
+<tr>
+<td>US 10</td>
+<td>English Rule Editing</td>
+<td>Should Have</td>
+<td>As a user, I want to be able to edit my original English version of a rule, so that I can easily change the rule and the generated DRL formatted version of the rule to better fit my needs.</td>
+<td><ol><li>Open the main page. </li><li>Create a new ruleset.</li><li>Using the examples provided in the ‘Rules in Multiple Formats’ spreadsheet in the ‘401 Rule NLP’ Google Drive folder, input a rule in English into the text input box.</li><li>Use any suggestions provided in popups as necessary to ensure the system fully registers the rule.</li><li>Click the ‘Analyze’ button</li><li>Ensure that the rule output in the design language is correct with the entry in the spreadsheet corresponding to your English rule.</li><li>Modify the original English input to change the rule.</li><li>Click the ‘Analyze’ button</li><li>Ensure that the rule output in the design language is correct with the changes you made.</li></ol></td>
+</tr>
+<tr>
+<td>US 11</td>
+<td>DRL Editing</td>
+<td>Could Have</td>
+<td>As a user, I want to be able to edit the DRL formatted rule generated by the system, so that I can ensure the translated version keeps the intent of my original rule.</td>
+<td><ol><li>Open the main page. </li><li>Create a new ruleset.</li><li>Using the examples provided in the ‘Rules in Multiple Formats’ spreadsheet in the ‘401 Rule NLP’ Google Drive folder, input a rule in English into the text input box.</li><li>Use any suggestions provided in popups as necessary to ensure the system fully registers the rule.</li><li>Click the ‘Analyze’ button</li><li>Ensure that the rule output in the design language is correct with the entry in the spreadsheet corresponding to your English rule. Export the ruleset to a JSON file.</li><li>Click on various elements of the translated rule and modify them.</li><li>Export the ruleset again. Ensure that the exportable JSON file has changed.</li></ol></td>
+</tr>
+<tr>
+<td>US 12</td>
+<td>Rule Ordering</td>
+<td>Could Have</td>
+<td>As a user, I want to be able to confirm the ordering I intend for certain rules is captured properly by the system, so that I know the DRL translated version is semantically identical to my original English rule.</td>
+<td><ol><li>Open the main page. </li><li>Create a new ruleset.</li><li>Using the examples provided in the ‘Rules in Multiple Formats’ spreadsheet in the ‘401 Rule NLP’ Google Drive folder, input a rule in English into the text input box. Ensure it is one where ordering in the final rule is important.</li><li>Use any suggestions provided in popups as necessary to ensure the system fully registers the rule.</li><li>Click the ‘Analyze’ button</li><li>Ensure that the rule output in the design language is correct with the entry in the spreadsheet corresponding to your English rule.</li><li>Using the popup that occurs, switch the ordering of the rule.</li><li>Ensure that the rule has been modified.</li></ol></td>
+</tr>
+<tr>
+<td>US 13</td>
+<td>Virtual Objects</td>
+<td>Must Have</td>
+<td>As a user, I want to be able to create a new virtual object if a desired Type is not available in the system, so that I can create rules based on Types not already defined within the system.</td>
+<td><ol><li>Open the main page. </li><li>Create a new ruleset.</li><li>In the textbox, write a new type not defined by the system.</li><li>Confirm that a popup asks if you would like to create a new object.</li><li>Complete the rule and analyze it.</li><li>Confirm that the object is in the outputted rule.</li></ol></td>
+</tr>
+<tr>
+<td>US 14</td>
+<td>Inclusive or Exclusive</td>
+<td>Would Have</td>
+<td>As a user, I want to be able to specify whether an "or" in my rule is inclusive or exclusive, so that I know the rule is semantically correct.</td>
+<td><ol><li>Open the main page. </li><li>Create a new ruleset.</li><li>Using the examples provided in the ‘Rules in Multiple Formats’ spreadsheet in the ‘401 Rule NLP’ Google Drive folder, input a rule in English into the text input box. Ensure it is a rule containing ‘or’.</li><li>Ensure that a popup asking if the or is inclusive or exclusive pops up.<ol><li>Analyze and convert the rule without clicking. Ensure that it matches the default inclusive setting.</li><li>Click the option, then convert the rule. Ensure that it matches the exclusive setting.</li></ol></li></ol></td>
+</tr>
+<tr>
+<td>US 15</td>
+<td>Rule Priority</td>
+<td>Must Have</td>
+<td>As a user, I want to be able to choose from different priority options for a rule, so that I can express how certain rules have higher or lower priority than others.</td>
+<td><ol><li>Open the main page. </li><li>Create a new ruleset.</li><li>Modify the priority of the rule.</li><li>Create a rule from the provided spreadsheet of examples.</li><li>Ensure that the priority is saved properly when a JSON file is exported.</li></ol></td>
+</tr>
+<tr>
+<td>US 16</td>
+<td>Key Word List Editing</td>
+<td>Must Have</td>
+<td>As an administrator, I want to be able to edit lists of relations, types, units, and properties, so that the app stays up to date with changes in the interior design industry.</td>
+<td><ol><li>Replace the supplied list of keywords with a new one.</li><li>Ensure the importation process goes well by checking console output.</li><li>Test with a variety of rules to ensure the terms added are now supported.</li></ol></td>
+</tr>
+<tr>
+<td>US 17</td>
+<td>JSON Import</td>
+<td>Should Have</td>
+<td>As a user, I want to be able to import JSON rules, so that I can edit them.</td>
+<td><ol><li>Open the main page. </li><li>Select the Import option. </li><li>Select an appropriate JSON file.</li><li>Ensure that all rules appear in the navigation bar after input, and that all rules are as they were before the JSON was exported.</li></ol></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Must Haves</strong></p>
+<ul>
+<li>1, 3, 4, 5, 6, 13, 15, 16</li>
+</ul>
+<p><strong>Should Haves</strong></p>
+<ul>
+<li>2, 8, 10</li>
+</ul>
+<p><strong>Would Haves</strong></p>
+<ul>
+<li>7, 14, 17</li>
+</ul>
+<p><strong>Could Haves</strong></p>
+<ul>
+<li>11, 12</li>
+</ul>
+<hr />
+<h1 id="technical-resources">Technical Resources</h1>
+<ul>
+<li><strong>Backend</strong>: <a href="https://palletsprojects.com/p/flask/">Flask</a> with <a href="https://www.postgresql.org/">PostgreSQL</a></li>
+<li>
+<p><strong>Frontend</strong>: <a href="https://reactjs.org/">React</a> using <a href="https://create-react-app.dev/">Create-React-App</a></p>
+<ul>
+<li><strong>React libraries</strong>:<ul>
+<li><a href="https://draftjs.org/">Draft.js</a></li>
+<li><a href="https://react-popup.elazizi.com/">React Popup</a></li>
+<li><a href="https://ant.design/">Ant Design</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Deployment</strong>: <a href="https://www.cybera.ca/">Cybera</a> with <a href="https://gunicorn.org/">Gunicorn</a></p>
+</li>
+<li><strong>Other Resources of Note</strong>: <a href="https://spacy.io/">spaCy.io</a> for some NLP functionality</li>
+</ul>
+<hr />
+<h1 id="similar-products">Similar Products</h1>
+<h3 id="rita-dsl-live-demo"><a href="https://rita-demo.herokuapp.com/">Rita-DSL (live demo)</a></h3>
+<ul>
+<li>Given a set of rules written in RITA (a regex-like language) and natural language, matches words in the text that fit the specified rules.</li>
+<li>Functionally very different (actually a live demo of RITA, which can be found <a href="https://github.com/zaibacu/rita-dsl">here</a>). However, this live demo has a UI that achieves much of what we are aiming to do. It takes input in, analyzes it, and prints JSON output on the same page.</li>
+<li>We could also potentially use the RITA language itself in this project. I have not determined if this is practical or not.</li>
+</ul>
+<h1 id="open-source-products">Open-Source Products</h1>
+<h3 id="fret-formal-requirements-elicitation-tool"><a href="https://github.com/NASA-SW-VnV/fret">FRET: Formal Requirements Elicitation Tool</a></h3>
+<ul>
+<li>Requirements elicitation tool for entering requirements into a domain-specific rule language</li>
+<li>Highlights words in different colours corresponding to the different parts of a requirement as parsing occurs</li>
+<li>Allows for creation of rules in rulesets</li>
+<li>Text is entered in a mixture of natural language and domain-specific language terms, so parsing is somewhat similar but not the same as what we intend to do. But the UI and ways of interaction is something worth keeping an eye on.</li>
+</ul>
+<h3 id="in2sql"><a href="https://github.com/FerreroJeremy/ln2sql">In2sql</a></h3>
+<ul>
+<li>Tool to convert natural language into SQL queries</li>
+<li>Not in the domain of our project, but SQL query translation shares similarities with what we are aiming to accomplish</li>
+<li>Given an SQL database dump, a selected language, and input phrase, outputs an SQL query to match this phrase.</li>
+<li>While this tool is limited in terms of parsing ability (it does not recognize plural versus singular, and specific key phrases are somewhat required), it does use a customizable thesaurus file for the given language being used to allow for improved recognition if a specific phrase is not being recognized properly.</li>
+</ul>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../Software Design/" class="btn btn-neutral float-right" title="Architecture/Component Diagram">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../Project Management/" class="btn btn-neutral" title="Project Plan"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../Project Management/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../Software Design/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+
+</body>
+</html>
